@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>RioTour</title>
+</head>
+<body>
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+  <!-- <img src="Logo.png" alt="Logo" width="40px" height="40px" > -->
+    <a class="navbar-brand" href="#">RioTour</a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex m-2">
+        
+      <select name="Buscar" class="form-select m-1" aria-label="Default select example">
+      <option selected>Ciudad</option>
+      <option>Barranquilla</option>
+      <option>Santa Marta</option>
+      <option>RioHacha</option>
+      </select>
+
+        <button class="btn btn-dark" type="submit">Buscar</button>
+      </form>
+
+      <form class="m-1">
+      <button onclick="window.location.replace('../index.html');" type="button" class="btn btn-danger btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Log Out
+      </button>
+      </form>
+      
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="container  text-center">
+  <div class="row d-flex justify-content-center">
+    
+      
+    <!-- <?php
+      $mysqli = new mysqli('localhost', 'root','', 'databaseriotour');
+      $query = $mysqli -> query ("SELECT * FROM `lugares`");
+          while ($valores = mysqli_fetch_array($query)) {
+            echo '<div class="col d-flex justify-content-center m-3">'. $valores['MapsUrl']. '<div class="card" style="width: 18rem;">
+            <img src="'. $valores['ImgUrl']. '" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">'. $valores['Lugar']. ' - '. $valores['Ciudad']. '</h5>
+              <p class="card-text">'. $valores['Descripcion']. '</p>
+            </div>
+          </div>'. '</div>';
+          }
+      ?> -->
+
+      <div class="col d-flex justify-content-center m-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62666.39628217824!2d-74.84662703450648!3d10.989786343837435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef43287be2572f1%3A0xee9a6af6bc7c8b3c!2sMalec%C3%B3n%20Tur%C3%ADstico%20R%C3%ADo%20Magdalena%20Barranquilla!5e0!3m2!1ses!2sco!4v1671172132566!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card" style="width: 18rem;">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipN-mVRwvdWglVwepbkyMLfWLWt5OzdQfJ9a8FLk=w408-h272-k-no" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Malecon del rio - Barranquilla</h5>
+            <p class="card-text">Paseo pavimentado con vista al río y el horizonte urbano, popular entre los peatones y ciclistas.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col d-flex justify-content-center m-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62666.39628217824!2d-74.84662703450648!3d10.989786343837435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef43287be2572f1%3A0xee9a6af6bc7c8b3c!2sMalec%C3%B3n%20Tur%C3%ADstico%20R%C3%ADo%20Magdalena%20Barranquilla!5e0!3m2!1ses!2sco!4v1671172132566!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card" style="width: 18rem;">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipN-mVRwvdWglVwepbkyMLfWLWt5OzdQfJ9a8FLk=w408-h272-k-no" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Malecon del rio - Barranquilla</h5>
+            <p class="card-text">Paseo pavimentado con vista al río y el horizonte urbano, popular entre los peatones y ciclistas.</p>
+          </div>
+        </div>
+      </div>
+
+
+    
+  </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
